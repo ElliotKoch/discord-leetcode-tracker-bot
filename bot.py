@@ -5,7 +5,6 @@ import discord
 import json
 import requests
 import os
-import logging
 
 
 # Keys are stored locally in the '.env' file for security reasons.
@@ -180,6 +179,5 @@ async def resume(ctx, days: int = commands.parameter(description="Fetch problems
     else:
         await ctx.send(f"**The number of day(s) must be a positive integer!**")
 
-# Creates a handler for the logs
-handler = logging.FileHandler(filename='logs/discord.log', encoding='utf-8', mode='w')
-bot.run(BOT_TOKEN, log_handler=handler, log_level=logging.DEBUG)
+# run the bot
+bot.run(BOT_TOKEN)
