@@ -1,13 +1,12 @@
 {
     "users": [
-      {
-        "username": "ElliotKoch",
-        "repos": [
-          {
-            "name": "leetcode"
-          }
-        ]
-      }
+        {
+            "username": "ElliotKoch",
+            "repos": [
+                {
+                    "name": "leetcode"
+                }
+            ]
+        }
     ]
-  }
-  
+}
